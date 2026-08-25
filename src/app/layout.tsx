@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Cleanmails - Cold Email SaaS Source Code",
   description: "The complete source code for a production-ready cold-email SaaS. Campaigns, warmup, unified inbox, AI replies. Built with Go + Next.js. $997 one-time.",
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

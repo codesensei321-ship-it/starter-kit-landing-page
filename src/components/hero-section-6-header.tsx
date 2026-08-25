@@ -98,6 +98,7 @@ export const HeroHeader = () => {
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                                 <Button
                                     size="sm"
+                                    className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold"
                                     nativeButton={false}
                                     render={
                                         <Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">

@@ -44,14 +44,88 @@ export default function FeaturesSection() {
                             aria-hidden
                             className="mask-radial-at-top-left mask-radial-[90%_80%] mask-radial-from-75%"
                         >
-                            <div className="bg-card relative mx-auto flex aspect-video flex-col justify-between rounded-xl border pb-6">
-                                <div className="mb-6 flex gap-1.5 border-b p-3">
-                                    <div className="bg-foreground/10 size-1.5 rounded-full"></div>
-                                    <div className="bg-foreground/10 size-1.5 rounded-full"></div>
-                                    <div className="bg-foreground/10 size-1.5 rounded-full"></div>
+                            {/* Stripe-like payments UI mockup */}
+                            <div className="bg-card relative mx-auto flex flex-col rounded-xl border overflow-hidden">
+                                {/* Browser chrome */}
+                                <div className="flex gap-1.5 border-b p-3 bg-zinc-900/50">
+                                    <div className="bg-red-500/60 size-2.5 rounded-full"></div>
+                                    <div className="bg-yellow-500/60 size-2.5 rounded-full"></div>
+                                    <div className="bg-green-500/60 size-2.5 rounded-full"></div>
                                 </div>
-
-                                <div className="bg-foreground/2 ring-foreground/6.5 mx-6 mt-auto h-32 rounded-xl shadow-xl ring" />
+                                
+                                {/* Dashboard content */}
+                                <div className="p-4 space-y-4">
+                                    {/* Header with balance */}
+                                    <div className="flex items-center justify-between">
+                                        <div>
+                                            <p className="text-xs text-muted-foreground">Total Revenue</p>
+                                            <p className="text-2xl font-semibold text-foreground">$24,589.00</p>
+                                        </div>
+                                        <div className="flex items-center gap-1 text-xs text-green-500 bg-green-500/10 px-2 py-1 rounded-full">
+                                            <svg className="size-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
+                                            +12.5%
+                                        </div>
+                                    </div>
+                                    
+                                    {/* Recent transactions */}
+                                    <div className="space-y-2">
+                                        <p className="text-xs text-muted-foreground font-medium">Recent Payments</p>
+                                        <div className="space-y-2">
+                                            <div className="flex items-center justify-between bg-zinc-800/50 rounded-lg px-3 py-2">
+                                                <div className="flex items-center gap-2">
+                                                    <div className="size-6 rounded-full bg-blue-500/20 flex items-center justify-center">
+                                                        <span className="text-xs">JD</span>
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-xs font-medium text-foreground">Pro Plan</p>
+                                                        <p className="text-[10px] text-muted-foreground">john@company.co</p>
+                                                    </div>
+                                                </div>
+                                                <p className="text-xs font-medium text-green-500">+$49.00</p>
+                                            </div>
+                                            <div className="flex items-center justify-between bg-zinc-800/50 rounded-lg px-3 py-2">
+                                                <div className="flex items-center gap-2">
+                                                    <div className="size-6 rounded-full bg-purple-500/20 flex items-center justify-center">
+                                                        <span className="text-xs">SM</span>
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-xs font-medium text-foreground">Enterprise</p>
+                                                        <p className="text-[10px] text-muted-foreground">sarah@startup.io</p>
+                                                    </div>
+                                                </div>
+                                                <p className="text-xs font-medium text-green-500">+$199.00</p>
+                                            </div>
+                                            <div className="flex items-center justify-between bg-zinc-800/50 rounded-lg px-3 py-2">
+                                                <div className="flex items-center gap-2">
+                                                    <div className="size-6 rounded-full bg-orange-500/20 flex items-center justify-center">
+                                                        <span className="text-xs">MK</span>
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-xs font-medium text-foreground">Starter Plan</p>
+                                                        <p className="text-[10px] text-muted-foreground">mike@agency.com</p>
+                                                    </div>
+                                                </div>
+                                                <p className="text-xs font-medium text-green-500">+$29.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    {/* MRR indicator */}
+                                    <div className="flex items-center gap-4 pt-2 border-t border-zinc-800">
+                                        <div>
+                                            <p className="text-[10px] text-muted-foreground">MRR</p>
+                                            <p className="text-sm font-semibold text-foreground">$8,420</p>
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] text-muted-foreground">Active Subs</p>
+                                            <p className="text-sm font-semibold text-foreground">127</p>
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] text-muted-foreground">Churn</p>
+                                            <p className="text-sm font-semibold text-foreground">2.1%</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

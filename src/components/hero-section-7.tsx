@@ -12,7 +12,7 @@ export default function HeroSection() {
 
             <main>
                 <section className="overflow-hidden">
-                    <div className="relative pt-24 md:pt-40 lg:pb-20 xl:pt-64">
+                    <div className="relative pt-20 md:pt-28 lg:pb-16 xl:pt-36">
                         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
                             <div>
                                 <Link
@@ -36,7 +36,7 @@ export default function HeroSection() {
 
                                         <div className="flex gap-3">
                                             <Button
-                                                className="w-fit"
+                                                className="w-fit bg-yellow-500 hover:bg-yellow-400 text-black font-semibold"
                                                 nativeButton={false}
                                                 render={<Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">Buy now ($997)</Link>}
                                             />
@@ -54,9 +54,9 @@ export default function HeroSection() {
                                         className="bg-foreground/2 z-1 absolute inset-0 rounded-2xl"
                                     />
                                     <Image
-                                        className="bg-background aspect-15/8 relative rounded-2xl"
-                                        src="/mail2.png"
-                                        alt="app screen"
+                                        className="bg-background aspect-15/8 relative rounded-2xl object-cover object-top"
+                                        src="/home.png"
+                                        alt="Cleanmails Dashboard"
                                         width="2700"
                                         height="1440"
                                     />

@@ -13,6 +13,7 @@ export default function CallToAction() {
                     <div className="mt-8 flex flex-wrap justify-center gap-3">
                         <Button
                             size="lg"
+                            className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold"
                             nativeButton={false}
                             render={<Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">Buy now ($997)</Link>}
                         />

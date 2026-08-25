@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function StatsSection() {
     return (
         <section className="py-16 md:py-20">
@@ -10,16 +12,34 @@ export default function StatsSection() {
                         <p className="text-muted-foreground text-balance text-lg">Why spend 6+ months building auth, payments, email infrastructure, and deployment from scratch? Get a complete, battle-tested codebase that handles all the boring stuff so you can focus on what makes your product unique.</p>
 
                         <div className="grid gap-12 md:grid-cols-3 md:gap-12">
-                            <div className="space-y-3 border-t pt-6">
-                                <div className="text-4xl font-semibold tracking-tight">Go</div>
+                            <div className="space-y-4 border-t pt-6">
+                                <Image
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg"
+                                    alt="Go"
+                                    width={80}
+                                    height={80}
+                                    className="h-12 w-auto"
+                                />
                                 <p className="text-muted-foreground">Fast, typed backend</p>
                             </div>
-                            <div className="space-y-3 border-t pt-6">
-                                <div className="text-4xl font-semibold tracking-tight">Next.js</div>
+                            <div className="space-y-4 border-t pt-6">
+                                <Image
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
+                                    alt="Next.js"
+                                    width={80}
+                                    height={80}
+                                    className="h-12 w-auto invert"
+                                />
                                 <p className="text-muted-foreground">Modern React frontend</p>
                             </div>
-                            <div className="space-y-3 border-t pt-6">
-                                <div className="text-4xl font-semibold tracking-tight">Docker</div>
+                            <div className="space-y-4 border-t pt-6">
+                                <Image
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg"
+                                    alt="Docker"
+                                    width={80}
+                                    height={80}
+                                    className="h-12 w-auto"
+                                />
                                 <p className="text-muted-foreground">Deploy anywhere</p>
                             </div>
                         </div>
