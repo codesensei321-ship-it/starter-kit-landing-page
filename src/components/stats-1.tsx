@@ -6,10 +6,10 @@ export default function StatsSection() {
             <div className="mx-auto max-w-7xl px-6">
                 <div className="grid gap-4 md:grid-cols-2 md:gap-6">
                     <h2 className="text-muted-foreground max-w-4xl text-balance text-4xl font-medium tracking-tight lg:text-5xl">
-                        <span className="text-foreground">Skip months of building.</span> <br /> Get production-ready code today.
+                        <span className="text-foreground">Skip the boring 3–6 months.</span> <br /> Start with working code.
                     </h2>
                     <div className="flex flex-col gap-32 md:mx-auto xl:gap-44">
-                        <p className="text-muted-foreground text-balance text-lg">Why spend 6+ months building auth, payments, email infrastructure, and deployment from scratch? Get a complete, battle-tested codebase that handles all the boring stuff so you can focus on what makes your product unique.</p>
+                        <p className="text-muted-foreground text-balance text-lg">You shouldn't have to build auth, OAuth, billing, email infrastructure, inbox sync and deployment before you can even test your SaaS idea. That's months of work before you write a single line of code that makes you different.</p>
 
                         <div className="grid gap-12 md:grid-cols-3 md:gap-12">
                             <div className="space-y-4 border-t pt-6">

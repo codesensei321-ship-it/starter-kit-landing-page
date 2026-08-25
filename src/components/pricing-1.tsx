@@ -6,41 +6,44 @@ export default function Pricing() {
     return (
         <section id="pricing" className="py-16 md:py-20">
             <div className="mx-auto max-w-7xl px-6">
-                <div className="max-w-sm space-y-6">
+                <div className="max-w-xl space-y-6 mb-12">
                     <h1 className="text-muted-foreground text-balance text-4xl font-medium tracking-tight lg:text-5xl">
-                        <span className="text-foreground">Simple pricing.</span> Own everything.
+                        <span className="text-foreground">One price.</span> Everything included.
                     </h1>
+                    <p className="text-muted-foreground text-lg">
+                        What would you rather spend $997 on? Months of engineering time rebuilding auth, OAuth, Stripe, campaigns, inbox, warmup, AI, verification, webhooks, and deployment? Or start with the code and spend your time on what makes your product different?
+                    </p>
                 </div>
 
-                <div className="mt-12 grid gap-1.5 border *:p-6 max-lg:mx-auto max-lg:max-w-sm lg:mt-20 lg:grid-cols-2">
-                    <div className="bg-card flex flex-col gap-8 lg:border-r">
+                <div className="grid gap-6 max-lg:mx-auto max-lg:max-w-lg lg:grid-cols-2">
+                    <div className="bg-card rounded-2xl border p-8">
                         <div>
-                            <p className="text-lg font-medium">Source Code License</p>
-                            <p className="text-muted-foreground text-lg font-medium">One-time purchase. Full ownership.</p>
+                            <p className="text-lg font-medium">Complete Source Code License</p>
+                            <p className="text-muted-foreground">One-time purchase. Full ownership. Ship your SaaS.</p>
 
-                            <div className="my-8 block text-4xl font-medium tracking-tight">
-                                $997 <span className="text-muted-foreground text-lg">one-time</span>
+                            <div className="my-8 block text-5xl font-medium tracking-tight">
+                                $997 <span className="text-muted-foreground text-lg font-normal">one-time</span>
                             </div>
 
                             <Button
                                 className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold"
+                                size="lg"
                                 nativeButton={false}
-                                render={<Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">Buy now ($997)</Link>}
+                                render={<Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">Get the complete source code — $997</Link>}
                             />
+                            
+                            <p className="text-muted-foreground text-sm text-center mt-4">One payment. Full source. Commercial license. Lifetime updates.</p>
                         </div>
 
-                        <ul className="text-muted-foreground list-outside space-y-3">
+                        <ul className="text-muted-foreground list-outside space-y-3 mt-8 pt-8 border-t">
                             {[
                                 'Complete Go + Next.js codebase',
-                                'Email campaign management',
-                                'Mailbox warmup system',
-                                'Unified inbox',
-                                'AI-powered replies',
-                                'Stripe billing integration',
-                                'Google & Microsoft OAuth',
-                                'Email verification',
-                                'Webhook handlers',
-                                'Docker deployment ready',
+                                'All 12 production modules',
+                                'Database + migrations',
+                                'Background workers',
+                                'Docker deployment configs',
+                                'Full documentation',
+                                'Commercial license',
                                 'Lifetime updates',
                                 'Discord community access',
                             ].map((item, index) => (
@@ -48,38 +51,55 @@ export default function Pricing() {
                                     key={index}
                                     className="flex items-center gap-3"
                                 >
-                                    <Check className="text-muted-foreground size-3" />
+                                    <Check className="text-yellow-500 size-4" />
                                     {item}
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    <div className="flex flex-col gap-8">
-                        <div>
-                            <p className="text-lg font-medium">What you get</p>
-                            <p className="text-muted-foreground text-lg font-medium">Everything to launch your SaaS</p>
+                    <div className="flex flex-col gap-6">
+                        <div className="rounded-2xl border bg-card p-6">
+                            <h3 className="font-medium mb-3">What happens after purchase?</h3>
+                            <ol className="space-y-2 text-sm text-muted-foreground">
+                                <li className="flex gap-2">
+                                    <span className="text-yellow-500 font-medium">1.</span>
+                                    You get a GitHub invite to the private repo
+                                </li>
+                                <li className="flex gap-2">
+                                    <span className="text-yellow-500 font-medium">2.</span>
+                                    Clone the repo from your private GitHub access
+                                </li>
+                                <li className="flex gap-2">
+                                    <span className="text-yellow-500 font-medium">3.</span>
+                                    Follow the setup guide (takes ~30 minutes)
+                                </li>
+                                <li className="flex gap-2">
+                                    <span className="text-yellow-500 font-medium">4.</span>
+                                    Deploy to your server and start customizing
+                                </li>
+                            </ol>
+                        </div>
+                        
+                        <div className="rounded-2xl border bg-card p-6 flex-1">
+                            <h3 className="font-medium mb-3">Why $997?</h3>
+                            <p className="text-muted-foreground text-sm mb-4">
+                                A single month of a senior developer costs $8,000-15,000. This codebase represents 3-6 months of focused development work.
+                            </p>
+                            <p className="text-muted-foreground text-sm">
+                                You're not paying for a template. You're paying for production-tested infrastructure that lets you skip straight to building what makes your product unique.
+                            </p>
+                        </div>
 
-                            <div className="my-8 space-y-4">
-                                <p className="text-muted-foreground">
-                                    <span className="text-foreground font-medium">No recurring fees.</span> Pay once, own forever. No monthly subscriptions, no usage limits, no vendor lock-in.
-                                </p>
-                                <p className="text-muted-foreground">
-                                    <span className="text-foreground font-medium">Deploy anywhere.</span> Your servers, your rules. AWS, GCP, DigitalOcean, or your own hardware.
-                                </p>
-                                <p className="text-muted-foreground">
-                                    <span className="text-foreground font-medium">Modify everything.</span> Full source code access. Add features, change the UI, integrate with your tools.
-                                </p>
-                                <p className="text-muted-foreground">
-                                    <span className="text-foreground font-medium">Build your brand.</span> White-label ready. Remove all traces and make it 100% yours.
-                                </p>
-                            </div>
-
+                        <div className="rounded-2xl border bg-zinc-900/50 p-6">
+                            <p className="text-sm text-muted-foreground">
+                                <span className="text-foreground font-medium">Not sure yet?</span> Explore the live demo first. See exactly what you're getting before you commit.
+                            </p>
                             <Button
-                                className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold"
                                 variant="outline"
+                                className="w-full mt-4"
                                 nativeButton={false}
-                                render={<Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">Buy now ($997)</Link>}
+                                render={<Link href="https://demo.coldmail.host" target="_blank" rel="noopener noreferrer">Try the live demo</Link>}
                             />
                         </div>
                     </div>

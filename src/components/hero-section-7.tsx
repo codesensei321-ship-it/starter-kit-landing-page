@@ -19,30 +19,36 @@ export default function HeroSection() {
                                     href="/"
                                     className="flex w-fit items-center gap-2 font-medium">
                                     <span className="text-sm">Go + Next.js</span>
-                                    <span className="text-muted-foreground text-sm">Production-ready cold email SaaS</span>
+                                    <span className="text-muted-foreground text-sm">Production-ready source code</span>
 
                                     <ArrowRight className="size-3.5" />
                                 </Link>
 
                                 <div className="mt-8 flex max-w-lg flex-col gap-4">
                                     <h1 className="text-balance text-4xl font-medium tracking-tight md:text-5xl">
-                                        Stop spending months building your SaaS. <span className="text-muted-foreground">Start with the code.</span>
+                                        Launch your own cold-email SaaS. <span className="text-muted-foreground">We already built the hard parts.</span>
                                     </h1>
 
                                     <div className="flex max-w-lg flex-col gap-6">
-                                        <p className="text-muted-foreground">The complete source code for a production-ready cold-email SaaS. Campaigns. Mailbox warmup. Unified inbox. AI replies. Stripe. OAuth. Auth. Verification. Webhooks. Docker deployment.</p>
+                                        <p className="text-muted-foreground">You're not buying a tool. You're buying the complete source code for a production-ready cold-email platform. Campaigns, warmup, inbox, AI, Stripe billing, OAuth, deployment — all wired together and ready to customize.</p>
 
-                                        <p className="text-2xl font-semibold">$997 once. <span className="text-muted-foreground text-lg font-normal">No subscription. No locked platform. You own the source code.</span></p>
+                                        <p className="text-2xl font-semibold">$997 once. <span className="text-muted-foreground text-lg font-normal">Full source. Commercial license. Lifetime updates.</span></p>
 
-                                        <div className="flex gap-3">
+                                        <div className="flex flex-col sm:flex-row gap-3">
                                             <Button
                                                 className="w-fit bg-yellow-500 hover:bg-yellow-400 text-black font-semibold"
                                                 nativeButton={false}
-                                                render={<Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">Buy now ($997)</Link>}
+                                                render={<Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">Get the complete source code — $997</Link>}
+                                            />
+                                            <Button
+                                                variant="outline"
+                                                className="w-fit"
+                                                nativeButton={false}
+                                                render={<Link href="https://demo.coldmail.host" target="_blank" rel="noopener noreferrer">Try the live demo</Link>}
                                             />
                                         </div>
 
-                                        <p className="text-muted-foreground text-sm">Build your brand on top of it. Modify everything. Deploy it anywhere. Ship sooner.</p>
+                                        <p className="text-muted-foreground text-sm">One payment. Get private GitHub access. Deploy on your servers. Make it yours.</p>
                                     </div>
                                 </div>
                             </div>
@@ -74,6 +80,16 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </section>
+                
+                {/* Target audience clarification */}
+                <section className="py-8 border-y border-zinc-800/50 bg-zinc-900/30">
+                    <div className="mx-auto max-w-4xl px-6 text-center">
+                        <p className="text-lg text-muted-foreground">
+                            For <span className="text-foreground font-medium">SaaS founders</span>, <span className="text-foreground font-medium">agencies</span> & <span className="text-foreground font-medium">developers</span> who want to launch their own cold-email product without spending months building the infrastructure.
+                        </p>
+                    </div>
+                </section>
+                
                 <LogoCloud />
             </main>
         </>

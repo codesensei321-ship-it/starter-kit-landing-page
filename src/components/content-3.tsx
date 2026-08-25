@@ -5,7 +5,7 @@ export default function ContentSection() {
         <section className="overflow-hidden py-16 md:py-20">
             <div className="mx-auto max-w-7xl space-y-8 px-6 md:space-y-16">
                 <div className="max-w-2xl max-lg:pr-6">
-                    <h2 className="text-balance text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl">Everything you need to run cold email at scale.</h2>
+                    <h2 className="text-balance text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl">Everything you need to BUILD a cold-email SaaS.</h2>
                 </div>
                 <div className="grid items-center gap-6 lg:grid-cols-3 lg:gap-20">
                     <div className="mask-b-from-foreground relative max-lg:-mr-6 lg:col-span-2">
@@ -98,21 +98,21 @@ export default function ContentSection() {
                     </div>
 
                     <div className="relative space-y-4">
-                        <p className="text-muted-foreground text-balance text-2xl">Built with Go backend and Next.js frontend. Campaigns, warmup, unified inbox, AI replies — all production-tested and ready to deploy.</p>
+                        <p className="text-muted-foreground text-balance text-2xl">Go backend. Next.js frontend. Campaigns, warmup, inbox, AI, billing — already wired together and working.</p>
 
                         <div className="grid gap-4 pt-6 sm:grid-cols-2">
                             <p className="text-muted-foreground text-balance">
                                 <span className="text-foreground font-medium">
-                                    <Zap className="inline size-4 -translate-y-0.5 text-yellow-500" /> Ship faster.
+                                    <Zap className="inline size-4 -translate-y-0.5 text-yellow-500" /> Ship in days.
                                 </span>{' '}
-                                Skip months of development. Launch your SaaS in days.
+                                Not months. The infrastructure is done. Focus on your market.
                             </p>
 
                             <p className="text-muted-foreground text-balance">
                                 <span className="text-foreground font-medium">
-                                    <Cpu className="inline size-4 -translate-y-0.5 text-yellow-500" /> Full ownership.
+                                    <Cpu className="inline size-4 -translate-y-0.5 text-yellow-500" /> Own everything.
                                 </span>{' '}
-                                Modify everything. Deploy anywhere. No vendor lock-in.
+                                No vendor lock-in. No monthly fees to us. It's your code now.
                             </p>
                         </div>
                     </div>

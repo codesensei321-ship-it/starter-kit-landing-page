@@ -5,7 +5,7 @@ export default function WhatYouGet() {
         {
             icon: Code2,
             title: 'Complete source code',
-            description: 'Go backend, Next.js frontend, Docker configs, Caddyfile, worker setup — delivered as a zip. No obfuscation.',
+            description: 'Go backend, Next.js frontend, Docker configs, Caddyfile, worker setup — delivered via private GitHub repo. No obfuscation.',
         },
         {
             icon: Scale,
@@ -25,7 +25,7 @@ export default function WhatYouGet() {
         {
             icon: RefreshCw,
             title: 'Lifetime updates',
-            description: 'Every future release — new features, patches, improvements. Download the latest zip anytime, forever.',
+            description: 'Every future release — new features, patches, improvements. Pull the latest updates from the repo anytime, forever.',
         },
         {
             icon: Users,
