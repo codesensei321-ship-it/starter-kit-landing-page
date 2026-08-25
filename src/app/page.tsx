@@ -1,4 +1,6 @@
 import HeroSection from '@/components/hero-section-7'
+import VideoSection from '@/components/video-section'
+import SelfHostCTA from '@/components/self-host-cta'
 import FeaturesSix from '@/components/features-6'
 import FeaturesSeven from '@/components/features-7'
 import Content from '@/components/content-3'
@@ -12,6 +14,8 @@ export default function DuskLandingPage() {
     return (
         <>
             <HeroSection />
+            <VideoSection />
+            <SelfHostCTA />
             <Content />
             <FeaturesSix />
             <Stats />
