@@ -159,7 +159,7 @@ export default function ThankYouPage() {
                                 <p className="text-muted-foreground mt-1 text-sm">Architecture, API reference, deployment, extending guides.</p>
                             </div>
                             <Button asChild>
-                                <Link href="https://github.com/nicepkg/Cleanmails-Starter-Kit#readme" target="_blank" rel="noopener noreferrer">
+                                <Link href="https://starter-kit.coldmail.host/docs" target="_blank" rel="noopener noreferrer">
                                     View docs →
                                 </Link>
                             </Button>

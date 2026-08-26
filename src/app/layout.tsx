@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { PricingPopupProvider } from "@/components/pricing-popup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Cleanmails - Cold Email SaaS Source Code",
-  description: "The complete source code for a production-ready cold-email SaaS. Campaigns, warmup, unified inbox, AI replies. Built with Go + Next.js. $997 one-time.",
+  description: "The complete source code for a production-ready cold-email SaaS. Campaigns, warmup, unified inbox, AI replies. Built with Go + Next.js. $597 one-time (limited).",
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
@@ -43,7 +44,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           `}
         </Script>
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <PricingPopupProvider>
+          {children}
+        </PricingPopupProvider>
+      </body>
     </html>
   );
 }

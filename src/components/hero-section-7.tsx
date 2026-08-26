@@ -1,9 +1,9 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { HeroHeader } from '@/components/hero-section-6-header'
 import LogoCloud from '@/components/hero-section-7-logo-cloud'
+import HeroPricingPill from '@/components/hero-pricing-pill'
 
 export default function HeroSection() {
     return (
@@ -15,14 +15,7 @@ export default function HeroSection() {
                     <div className="relative pt-20 md:pt-28 lg:pb-16 xl:pt-36">
                         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
                             <div>
-                                <Link
-                                    href="/"
-                                    className="flex w-fit items-center gap-2 font-medium">
-                                    <span className="text-sm">Go + Next.js</span>
-                                    <span className="text-muted-foreground text-sm">Production-ready source code</span>
-
-                                    <ArrowRight className="size-3.5" />
-                                </Link>
+                                <HeroPricingPill />
 
                                 <div className="mt-8 flex max-w-lg flex-col gap-4">
                                     <h1 className="text-balance text-4xl font-medium tracking-tight md:text-5xl">
@@ -32,13 +25,13 @@ export default function HeroSection() {
                                     <div className="flex max-w-lg flex-col gap-6">
                                         <p className="text-muted-foreground">You're not buying a tool. You're buying the complete source code for a production-ready cold-email platform. Campaigns, warmup, inbox, AI, Stripe billing, OAuth, deployment — all wired together and ready to customize.</p>
 
-                                        <p className="text-2xl font-semibold">$997 once. <span className="text-muted-foreground text-lg font-normal">Full source. Commercial license. Lifetime updates.</span></p>
+                                        <p className="text-2xl font-semibold">$597 once. <span className="text-muted-foreground text-lg font-normal">Full source. Commercial license. Lifetime updates.</span></p>
 
                                         <div className="flex flex-col sm:flex-row gap-3">
                                             <Button
                                                 className="w-fit bg-yellow-500 hover:bg-yellow-400 text-black font-semibold"
                                                 nativeButton={false}
-                                                render={<Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">Get the complete source code — $997</Link>}
+                                                render={<Link href="https://checkout.dodopayments.com/buy/pdt_0NjkeAqOaqVH78qagQT2p?quantity=1&redirect_url=https://saas-starter.coldmail.host%2Fthank-you">Get the complete source code — $597</Link>}
                                             />
                                             <Button
                                                 variant="outline"

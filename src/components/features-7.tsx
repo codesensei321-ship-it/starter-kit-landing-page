@@ -131,7 +131,7 @@ export default function FeaturesSection() {
                     </div>
                     <div className="col-span-full border-y p-12 lg:py-20">
                         <p className="text-center text-4xl font-semibold lg:text-7xl">
-                            $997 <span className="text-muted-foreground">One-time payment</span>
+                            $597 <span className="text-muted-foreground">One-time payment</span>
                         </p>
                     </div>
                     <div className="relative col-span-full">

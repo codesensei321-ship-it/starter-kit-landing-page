@@ -179,7 +179,7 @@ export default function FAQs() {
                         Frequently Asked Questions
                     </h2>
                     <p className="text-muted-foreground max-w-2xl mx-auto">
-                        At $997, unanswered questions = lost sales. So here's everything you might want to know.
+                        At $597, unanswered questions = lost sales. So here's everything you might want to know.
                     </p>
                 </div>
 

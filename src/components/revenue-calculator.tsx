@@ -77,8 +77,8 @@ export default function RevenueCalculator() {
                             <p className="text-sm text-muted-foreground mt-1">Yearly revenue</p>
                         </div>
                         <div className="rounded-xl bg-zinc-900/50 p-4 text-center">
-                            <p className="text-3xl md:text-4xl font-bold text-green-500">{Math.round(yearlyRevenue / 997)}x</p>
-                            <p className="text-sm text-muted-foreground mt-1">ROI on $997</p>
+                            <p className="text-3xl md:text-4xl font-bold text-green-500">{Math.round(yearlyRevenue / 597)}x</p>
+                            <p className="text-sm text-muted-foreground mt-1">ROI on $597</p>
                         </div>
                     </div>
 

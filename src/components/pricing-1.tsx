@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Check } from 'lucide-react'
+import PricingInfoButton from '@/components/pricing-info-button'
 
 export default function Pricing() {
     return (
@@ -11,25 +12,30 @@ export default function Pricing() {
                         <span className="text-foreground">One price.</span> Everything included.
                     </h1>
                     <p className="text-muted-foreground text-lg">
-                        What would you rather spend $997 on? Months of engineering time rebuilding auth, OAuth, Stripe, campaigns, inbox, warmup, AI, verification, webhooks, and deployment? Or start with the code and spend your time on what makes your product different?
+                        What would you rather spend $597 on? Months of engineering time rebuilding auth, OAuth, Stripe, campaigns, inbox, warmup, AI, verification, webhooks, and deployment? Or start with the code and spend your time on what makes your product different?
                     </p>
                 </div>
 
                 <div className="grid gap-6 max-lg:mx-auto max-lg:max-w-lg lg:grid-cols-2">
                     <div className="bg-card rounded-2xl border p-8">
                         <div>
-                            <p className="text-lg font-medium">Complete Source Code License</p>
+                            <div className="flex items-center justify-between mb-1">
+                                <p className="text-lg font-medium">Complete Source Code License</p>
+                                <span className="text-xs bg-yellow-500/10 text-yellow-500 px-2 py-1 rounded-full border border-yellow-500/20">LIMITED</span>
+                            </div>
                             <p className="text-muted-foreground">One-time purchase. Full ownership. Ship your SaaS.</p>
 
-                            <div className="my-8 block text-5xl font-medium tracking-tight">
-                                $997 <span className="text-muted-foreground text-lg font-normal">one-time</span>
+                            <div className="my-8 flex items-baseline gap-3">
+                                <span className="text-5xl font-medium tracking-tight">$597</span>
+                                <span className="text-muted-foreground text-lg">one-time</span>
+                                <PricingInfoButton />
                             </div>
 
                             <Button
                                 className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold"
                                 size="lg"
                                 nativeButton={false}
-                                render={<Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">Get the complete source code — $997</Link>}
+                                render={<Link href="https://checkout.dodopayments.com/buy/pdt_0NjkeAqOaqVH78qagQT2p?quantity=1&redirect_url=https://saas-starter.coldmail.host%2Fthank-you">Get the complete source code — $597</Link>}
                             />
                             
                             <p className="text-muted-foreground text-sm text-center mt-4">One payment. Full source. Commercial license. Lifetime updates.</p>
@@ -82,7 +88,7 @@ export default function Pricing() {
                         </div>
                         
                         <div className="rounded-2xl border bg-card p-6 flex-1">
-                            <h3 className="font-medium mb-3">Why $997?</h3>
+                            <h3 className="font-medium mb-3">Why $597?</h3>
                             <p className="text-muted-foreground text-sm mb-4">
                                 A single month of a senior developer costs $8,000-15,000. This codebase represents 3-6 months of focused development work.
                             </p>

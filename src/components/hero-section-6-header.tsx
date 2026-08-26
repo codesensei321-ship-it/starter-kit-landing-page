@@ -101,8 +101,8 @@ export const HeroHeader = () => {
                                     className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold"
                                     nativeButton={false}
                                     render={
-                                        <Link href="https://checkout.dodopayments.com/session/cks_0Nm8Yo2JKvBC9v0pKZQ7x">
-                                            <span>Buy now ($997)</span>
+                                        <Link href="https://checkout.dodopayments.com/buy/pdt_0NjkeAqOaqVH78qagQT2p?quantity=1&redirect_url=https://saas-starter.coldmail.host%2Fthank-you">
+                                            <span>Buy now ($597)</span>
                                         </Link>
                                     }
                                 />
