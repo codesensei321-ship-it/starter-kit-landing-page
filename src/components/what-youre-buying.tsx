@@ -134,7 +134,7 @@ export default function WhatYoureBuying() {
                             <Button
                                 className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold"
                                 nativeButton={false}
-                                render={<Link href="https://demo.coldmail.host" target="_blank" rel="noopener noreferrer">See it running — Live demo</Link>}
+                                render={<Link href="https://product-demo.cleanmails.online/" target="_blank" rel="noopener noreferrer">See it running — Live demo</Link>}
                             />
                             <Button
                                 variant="outline"

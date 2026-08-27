@@ -23,7 +23,7 @@ export default function CallToAction() {
                             size="lg"
                             variant="outline"
                             nativeButton={false}
-                            render={<Link href="https://demo.coldmail.host" target="_blank" rel="noopener noreferrer">Try the live demo first</Link>}
+                            render={<Link href="https://product-demo.cleanmails.online/" target="_blank" rel="noopener noreferrer">Try the live demo first</Link>}
                         />
                     </div>
                     

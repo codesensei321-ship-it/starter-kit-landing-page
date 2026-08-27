@@ -37,7 +37,7 @@ export default function HeroSection() {
                                                 variant="outline"
                                                 className="w-fit"
                                                 nativeButton={false}
-                                                render={<Link href="https://demo.coldmail.host" target="_blank" rel="noopener noreferrer">Try the live demo</Link>}
+                                                render={<Link href="https://product-demo.cleanmails.online/" target="_blank" rel="noopener noreferrer">Try the live demo</Link>}
                                             />
                                         </div>
 
